@@ -1,0 +1,4 @@
+layouts_custom_html:
+  default: ''
+  description:
+    en: "Html for custom html widget"
