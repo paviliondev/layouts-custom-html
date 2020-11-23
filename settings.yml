@@ -1,4 +1,5 @@
 layouts_custom_html:
   default: ''
+  textarea: true
   description:
     en: "Html for custom html widget"
