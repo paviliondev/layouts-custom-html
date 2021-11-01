@@ -11,7 +11,7 @@ try {
   console.error(error);
 }
 
-export default layouts.createLayoutsWidget('custom-html', {
+export default layouts.createLayoutsWidget(`${settings.widget_name}`, {
   defaultState() {
     return {
       renderScheduled: false
@@ -28,7 +28,7 @@ export default layouts.createLayoutsWidget('custom-html', {
       }
 
       scheduleOnce('afterRender', this, function() {
-        $("div.layouts-custom-html").append(`<div class='contents'>${html}</div>`);
+        $("div.layouts-" + `${settings.widget_name}`).append(`<div class='contents'>${html}</div>`);
       });
       state.renderScheduled = true;
     }

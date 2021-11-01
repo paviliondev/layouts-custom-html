@@ -1,3 +1,7 @@
+widget_name:
+  default: 'custom-html'
+  description:
+    en: "Give a unique name if you want to include this widget several times"
 layouts_custom_html:
   default: ''
   textarea: true
